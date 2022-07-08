@@ -1,38 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  width: 100%;
   min-height: 100vh;
+  opacity: 0.8;
+  background: repeating-linear-gradient( 45deg, #caa8e9, #caa8e9 5px, #ddceeb 5px, #ddceeb 25px );
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+.base-container {  
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;  
+  
+}
+
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+  background-color: rgb(202, 168, 233);
+  width: 50%;  
+  margin-top: 50px;
+  padding: 20px;  
+  border: 2px solid rgb(177, 144, 207);  
+  border-radius: 15px 15px 0 0;
+}
+
+.result-container{
+  display: flex;
+  /* background-color: rgb(221, 206, 235); */
+  width: 50%;
+  min-height: 50vh;
+  padding: 50px;
+  margin-bottom: 100px;  
+  /* border: 2px solid rgb(177, 144, 207); */
+  background: rgba( 202, 168, 233, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 0 0 10px 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+
+form {
+  width: calc(100% - 25px);
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+  background-color: rgb(177, 144, 207);
+  border: 2px solid rgb(101, 77, 124) ;
+  padding: 5px 25px;
+  margin: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  padding: 5px 1px;
+  /* flex: 1 25px; */
+  min-width: 50px;
+  margin: 10px;
+}
+
+.footer {
+  padding: 35px;
+  width: 100%;
+  background-color: rgb(202, 168, 233);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-inside {
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: dashed;
+  font-weight: bold;
+  color: rgb(58, 40, 73);
+
+}
+li {
+  text-indent:15px;
+  list-style-position: inside;
+}
+
+h1 {
+  margin: 15px;  
+}
+
+h2 {
+  margin: 5px 0;
+}
+
+h4 {
+  text-decoration: underline;
+  margin: 25px 0 5px 0;
+
+}
+
+p {
+  margin: 10px 0;
+  font-style: italic;
 }
